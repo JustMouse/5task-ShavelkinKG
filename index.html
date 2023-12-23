@@ -1,0 +1,26 @@
+<html>
+
+<head>    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.7.0"> </script>    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>    
+</head>
+
+<body>
+    
+    <div id="container">
+
+        <h3>Нарисуйте цифру. Желательно в центре квадрата. Автор: Щавелкин К.Г.</h3>
+        <p id="result">Обученная модель</p>
+
+        <div>            
+            <button type="button" class="btn btn-primary btn-block" onclick="predictModel()">Узнать число</button>
+            
+            <button type="button" class="btn btn-secondary btn-block" onclick="erase()">Счистить</button>
+        </div>        
+        <canvas id="canvas" width="386px" height="386px" class="canvas"
+            style="border:1px solid #b9bfc9;margin-top:25px;"></canvas>
+    </div>        
+    <script src="index.js"></script>
+</body>
+
+</html>
