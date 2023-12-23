@@ -86,7 +86,7 @@ async function predictModel() {
     image = tf.image.resizeBilinear(image, [28, 28]).sum(2).expandDims(0).expandDims(-1)    
     y = model.predict(image);
 
-    document.getElementById('result').innerHTML = "Предсказание: " + y.argMax(1).dataSync();
+    document.getElementById('result').innerHTML = "<center>Число: " + y.argMax(1).dataSync() + "</center>";
 }
 
 var model = loadModel()
